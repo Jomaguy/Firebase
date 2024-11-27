@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+  </head>
+  <body>
+    <h1>Firebase Authentication</h1>
+    <p>Enter an email and password below and either sign in to an existing account or sign up:</p>
+
+    <!-- Input fields -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" placeholder="Enter your email" /><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" placeholder="Enter your password" /><br><br>
+
+    <!-- Buttons -->
+    <button id="quickstart-sign-in" name="signin">Sign In</button>
+    <button id="quickstart-sign-up" name="signup">Sign Up</button>
+    <button id="quickstart-verify-email" name="verify-email" disabled>
+      Send Email Verification
+    </button>
+    <button id="quickstart-password-reset" name="reset-password">
+      Send Password Reset Email
+    </button>
+
+    <!-- Sign out-->
+    <button id="quickstart-sign-out" name="signout" disabled>Sign Out</button>
+
+    <!-- Sign in with Google-->
+    <button id="google-sign-in" name="google-signin">Sign In with Google</button>
+
+
+
+    <!-- Status Display -->
+    <div>
+      <p>Sign-in status: <span id="quickstart-sign-in-status">Unknown</span></p>
+      <p>Current User:</p>
+      <pre><code id="quickstart-account-details">null</code></pre>
+    </div>
+
+    <!-- Link to External JavaScript -->
+    <script type="module" src="authentication.js"></script>
+  </body>
+</html>

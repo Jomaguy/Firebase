@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  </head>
+  <body>
+    <h1>Sign Up</h1>
+    <input type="email" id="email" placeholder="Enter your email" />
+    <input type="password" id="password" placeholder="Enter your password" />
+    <button id="signupButton">Sign Up</button>
+    <button id="goToSignInButton">Go Back to Sign In</button>
+
+    <script type="module" src="signup.js"></script>
+    <script>
+      // Add functionality to redirect to the sign-in page
+      document.getElementById("goToSignInButton").addEventListener("click", () => {
+        window.location.href = "authentication.html"; // Replace "signin.html" with the actual sign-in page filename
+      });
+    </script>
+
+  </body>
+</html>
