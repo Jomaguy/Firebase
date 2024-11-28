@@ -7,6 +7,8 @@ import {
   GoogleAuthProvider,
 } from "https://www.gstatic.com/firebasejs/9.23.0/firebase-auth.js";
 
+
+// Ensure that the JS runs only after the HTML DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
   console.log("authentication.js is loaded and DOM is ready");
 
